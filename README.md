@@ -4,7 +4,7 @@
 
 ## Блок-схема 
 
-![Блок-схема работы программы](.\images\diagram.png)
+![Блок-схема работы программы](https://github.com/Denis-Vodovozov/final-work/blob/main/images/diagram.png)
 
 ## Решение задачи    
 - Вводим переменные, размер массива и его элементы.
