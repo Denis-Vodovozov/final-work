@@ -18,9 +18,23 @@ void ShowArray(string[] array)
     }
 }
 
+string[] MinThreeCharactersLength(string[] array, int n)
+{
+    string[] newArray = new string[n];
+    for (int i = 0, j = 0; i < array.Length && j < newArray.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[j] = array[i];
+            j++;
+        }
+    }
+    return newArray;
+}
+
 Console.Write("Input size for array: ");
 int a = Convert.ToInt32(Console.ReadLine());
 string[] myArray = CreateArray(a);
 ShowArray(myArray);
 Console.WriteLine();
-
+ShowArray(MinThreeCharactersLength(myArray, a));
